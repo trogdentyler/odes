@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath} 
+\usepackage{amssymb}
+\usepackage[margin=0.5in]{geometry}
+\newcommand{\ds}{\displaystyle}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage[oztex]{harpoon}
+\usepackage{bbm}  
+
+\begin{document}
+
+\begin{center}\section*{MATH 316D W13}\end{center}
+\subsection*{DD1 Individual Quiz}
+
+\begin{enumerate}
+	\item \textbf{Change to}, ``Given the following ODE with variable coefficients what would be an appropriate guess for the solution?"
+	
+	\(y''+ty=0\)
+		\begin{enumerate}
+			\item \(y(t)=\sum_{n=0}^{\infty} t^{n}\)
+			\item \(y(t)=\sum_{n=0}^{\infty} b_{n}t^{n}\)
+			\item \(y(t)=\sum_{n=0}^{\infty} a_{n}t^{n}\)
+			\item Both \textbf{\textup{b}} and \textbf{\textup{c}}. $\implies$ \textbf{Correct}
+			\item None of the above.
+		\end{enumerate}
+		
+	\item \textbf{Change to}, ``Using the same information in question one, determine the form of the ODE using your guessed solution."
+	
+		\begin{enumerate}
+			\item \(\sum_{n=2}^{\infty} n(n-1)a_{n}t^{n-2}+t\sum_{n=0}^{\infty}a_{n}t^{n}=0\)
+			\item \(\sum_{n=2}^{\infty} n(n-1)t^{n-2}+t\sum_{n=0}^{\infty}t^{n}=0\)
+			\item \(\sum_{n=2}^{\infty} n(n-1)b_{n}t^{n-2}+t\sum_{n=0}^{\infty}b_{n}t^{n}=0\)
+			\item Either \textbf{\textup{a}} or \textbf{\textup{c}}. $\implies$ \textbf{Correct}
+		\end{enumerate}
+		
+	\item \textbf{Add}, ``Choose the correct form of the second derivative of your guessed solution that will allow you to simply the ODE into one summation."
+	
+		\begin{enumerate}
+			\item \(\sum_{n=2}^{\infty} n(n-1)t^{n-2}\)
+			\item \(\sum_{n=0}^{\infty} (n+2)(n+1)a_{n+2}\, t^{n}\) $\implies$ \textbf{Correct}
+			\item \(\sum_{n=0}^{\infty} (n-2)(n-3)b_{n-2}\, t^{n-4}\)
+			\item Either \textbf{\textup{b}} or \textbf{\textup{c}}.
+		\end{enumerate}
+		
+	\item \textbf{Add}, ``Solve the ODE from question one, and assuming a solution that involves only the even indices, what would be the form of the coefficients?"
+	
+		\begin{enumerate}
+			\item \(\sum_{n=0}^{\infty} a_n=-\sum_{n=0}^{\infty}(n+2)(n+1)a_{n+2},\ \textrm{for n}={0,2,4,...}\) $\implies$ \textbf{Correct}
+			\item \(\sum_{n=1}^{\infty} a_n=-\sum_{n=1}^{\infty}(n-2)(n-3)a_{n-2},\ \textrm{for n}={1,3,5,...}\)
+			\item \(\sum_{n=1}^{\infty} b_n=-\sum_{n=1}^{\infty}(n+2)(n+1)b_{n+2},\ \textrm{for n}={1,3,5,...}\)
+			\item \(\sum_{n=0}^{\infty} b_n=-\sum_{n=0}^{\infty}(n-2)(n-3)b_{n-2},\ \textrm{for n}={0,2,4,...}\)
+		\end{enumerate}
+		
+	\item \textbf{Add}, ``From your answer to the previous question determine a simplified form for the summation of your coefficient by expanding the first few iterations."
+	
+		\begin{enumerate}
+			\item \(\sum_{n=0}^{\infty} b_n=-\sum_{n=0}^{\infty}\frac{b_{n+2}}{3|n|},\ \textrm{for n}={0,2,4,...}\)
+			\item \(\sum_{n=1}^{\infty} a_n=-\sum_{n=1}^{\infty}\frac{a_{n+2}}{2n},\ \textrm{for n}={1,3,5,...}\)
+			\item \(\sum_{n=0}^{\infty} a_n=-\sum_{n=0}^{\infty}\frac{a_{0}}{n!},\ \textrm{for n}={0,2,4,...}\) $\implies$ \textbf{Correct}
+			\item None of the above.
+		\end{enumerate}
+		
+\end{enumerate}
+
+\subsection*{DD2 Group Quiz}
+
+\paragraph{}\textcolor{red}{Group Quiz DD2 is an accountability quiz.}
+
+\end{document}
